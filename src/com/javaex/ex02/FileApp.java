@@ -7,7 +7,16 @@ public class FileApp {
 	public static void main(String[] args) {
 
 		// try~catch문을 사용하여 에러를 수정하세요
-		fileRead();
+		
+		try {
+			
+			fileRead();
+		} catch (ArrayIndexOutOfBoundsException  e) {
+			System.out.println("배열 인덱스 오류 발생");
+		}catch (IOException e) {
+			System.out.println("파일이 없습니다.");
+		}
+		
 
 	}
 
