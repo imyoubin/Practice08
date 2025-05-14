@@ -37,5 +37,12 @@ public class Point {
 		return "Point [x=" + x + ", y=" + y + "]";
 	}
 	
-	
+	public boolean equals(Object obj) {
+		Point p = (Point)obj;
+		if( this.x == p.x) {
+            return true;
+        } else {
+            return false;  
+        }
+	}
 }
